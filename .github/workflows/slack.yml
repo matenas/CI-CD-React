@@ -13,4 +13,4 @@ jobs:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       uses: pullreminders/slack-action@master
       with:
-        args: '{\"channel\":\"C02MWFK2WR1\",\"text\":\"Hice un cambio\"}'
+        args: '{\"channel\":\"C02MWFK2WR1\",\"text\":\"Hice un cambio\",\"text\":\"*Quien hizo el cambio?:* ${{ github.event.pull_request.user.login }}}'
